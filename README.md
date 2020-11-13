@@ -63,7 +63,7 @@ urlpatterns = [
 ## Config the frontend app, direct to the `frontend` folder
 
 ```
-frontend
+frontend folder structure
 - static
 	- frontend
 	- css
