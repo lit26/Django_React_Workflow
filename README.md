@@ -69,6 +69,7 @@ frontend
 	- css
 - templates
   	- frontend
+		- index.html
 - src
 	- components
 	- App.js
