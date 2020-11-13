@@ -6,10 +6,10 @@ This is a full stack web develop setup which use Django for the backend and Reac
 
 Set up the django project, frontend app and backend app. 
 ```
-$ django-admin startproject Django_React_Workflow
-$ cd Django_React_Workflow
-$ django-admin startapp backend
-$ django-admin startapp frontend
+django-admin startproject Django_React_Workflow
+cd Django_React_Workflow
+django-admin startapp backend
+django-admin startapp frontend
 ```
 
 In `Django_React_Workflow/settings.py`
@@ -38,9 +38,7 @@ urlpatterns = [
 ]
 ```
 
-## Config the backend app
-
-In the `backend` folder
+## Config the backend app, direct to the `backend` folder
 
 In `views.py`
 ```python
@@ -62,9 +60,7 @@ urlpatterns = [
 ]
 ```
 
-## Config the frontend app
-
-In the `frontend` folder, create some folders and files
+## Config the frontend app, direct to the `frontend` folder
 
 ```
 frontend
@@ -72,12 +68,11 @@ frontend
 	- frontend
 	- css
 - templates
-  - frontend
+  	- frontend
 - src
-  - src
-	   - components
-     - App.js
-     - index.js
+	- components
+	- App.js
+	- index.js
 ```
 Using terminal
 ```bash
