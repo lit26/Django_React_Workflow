@@ -101,6 +101,7 @@ Install npm packages
 npm init -y
 npm i webpack webpack-cli --save-dev
 npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+npm i file-loader style-loader css-loader --save-dev
 npm i react react-dom --save-dev
 npm install @babel/plugin-proposal-class-properties
 npm install react-router-dom
@@ -153,6 +154,19 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
+      },
+      {
+        test: /\.(svg|png|jpg|jpeg|gif)$/,
+        loader: "file-loader",
+
+        options: {
+          name: "[name].[ext]",
+          outputPath: "../../static/dist",
+        },
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
