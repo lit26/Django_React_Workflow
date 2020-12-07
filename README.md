@@ -1,3 +1,3 @@
-# Django_React_Workflow
+# Full Stack Boilerplate
 
-This is a full stack web develop boilderplate setup which use Django or Flask for the backend, React for the frontend and integrate React into Django using Webpack & Babel
+This is a full stack web develop boilerplate setup which use Django or Flask for the backend, React for the frontend and integrate React into Backend using Webpack & Babel.
