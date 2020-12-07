@@ -1,15 +1,15 @@
 # Django_React_Workflow
 
-This is a full stack web develop setup which use Django for the backend and React for the frontend
+This is a full stack web develop setup which use Django for the backend, React for the frontend and integrate React into Django using Webpack & Babel
 
 ## Set up the projects
 
 Set up the django project, frontend app and backend app. 
 ```
-$ django-admin startproject Django_React_Workflow
-$ cd Django_React_Workflow
-$ django-admin startapp backend
-$ django-admin startapp frontend
+django-admin startproject Django_React_Workflow
+cd Django_React_Workflow
+django-admin startapp backend
+django-admin startapp frontend
 ```
 
 In `Django_React_Workflow/settings.py`
@@ -38,9 +38,7 @@ urlpatterns = [
 ]
 ```
 
-## Config the backend app
-
-In the `backend` folder
+## Config the backend app, direct to the `backend` folder
 
 In `views.py`
 ```python
@@ -62,24 +60,22 @@ urlpatterns = [
 ]
 ```
 
-## Config the frontend app
-
-In the `frontend` folder, create some folders and files
+## Config the frontend app, direct to the `frontend` folder
 
 ```
-frontend
+frontend folder structure
 - static
 	- frontend
 	- css
 - templates
-  - frontend
+  	- frontend
+		- index.html
 - src
-  - src
-	   - components
-     - App.js
-     - index.js
+	- components
+	- App.js
+	- index.js
 ```
-Using terminal
+Using terminal (shortcut)
 ```bash
 mkdir static
 mkdir templates
@@ -104,7 +100,7 @@ npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
 npm i file-loader style-loader css-loader --save-dev
 npm i react react-dom --save-dev
 npm install @babel/plugin-proposal-class-properties
-npm install react-router-dom
+npm install react-router-dom 
 ```
 
 ### Config some settings
@@ -257,12 +253,12 @@ function App() {
 export default App
 ```
 
-## Run
-To run the React
+## Develop the project
+For the frontend
 ```bash
 npm run dev
 ```
-To run the Django backend
+For the Django backend
 ```bash
 python3 manage.py makemigration
 python3 manage.py migrate
