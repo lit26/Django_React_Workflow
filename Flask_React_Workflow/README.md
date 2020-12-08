@@ -25,7 +25,6 @@ mkdir src/components
 touch babel.config.js
 touch webpack.config.js
 touch templates/index.html
-touch urls.py
 touch src/App.js
 touch src/index.js
 touch app.py
@@ -56,6 +55,9 @@ In `babel.config.js`
 ```jsx
 module.exports = {
     presets: ["@babel/preset-env", "@babel/preset-react"],
+    plugins: [
+        "@babel/plugin-proposal-class-properties"
+      ]
 };
 ```
 
