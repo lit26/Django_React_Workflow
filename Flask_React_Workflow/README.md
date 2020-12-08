@@ -95,7 +95,7 @@ module.exports = {
 ```
 
 ### Config urls and views
-In `templates/frontend/index.html`
+In `templates/index.html`
 ```html
 <!DOCTYPE html>
 <html>
