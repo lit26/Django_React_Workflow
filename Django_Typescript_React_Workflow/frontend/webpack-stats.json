@@ -1,0 +1,14 @@
+{
+  "status": "done",
+  "assets": {
+    "main.js": {
+      "name": "main.js",
+      "path": "/Users/tianningli/Documents/GitHub/Full_Stack_Boilerplate/Django_Typescript_React_Workflow/frontend/static/frontend/main.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "main.js"
+    ]
+  }
+}
