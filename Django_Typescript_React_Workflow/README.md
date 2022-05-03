@@ -101,7 +101,7 @@ npm init -y
 ### Config some settings
 
 In `package.json`
-```jsx
+```json
 {
   "name": "frontend",
   "version": "1.0.0",
@@ -211,6 +211,39 @@ module.exports = {
   plugins: [new BundleTracker({ filename: "./webpack-stats.json" })],
 };
 
+```
+In `tsconfig.json`
+```json
+{
+    "compilerOptions": {
+      "target": "es6",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext",
+        "es6"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": false,
+      "jsx": "react-jsx",
+      "noImplicitAny": true,
+      "noImplicitThis": true,
+      "strictNullChecks": true
+    },
+    "include": [
+      "src"
+    ]
+  }
 ```
 
 ### Config urls and views
